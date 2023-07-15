@@ -28,17 +28,18 @@
                 <a href="#about">About</a>
             </li>
             <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
                 <a href="#projects">Projects</a>
             </li>
             <li>
                 <a href="#skills">Skills</a>
             </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            
             <li>
                 <a href="#contact">Contact</a>
             </li>
@@ -48,9 +49,9 @@
 
     <div id="lead">
         <div id="lead-content">
-            <h1>Ryan Fitzgerald</h1>
-            <h2>Software Engineer</h2>
-            <a href="#" class="btn-rounded-white">Download Resume</a>
+            <h1>Logan Armstrong</h1>
+            <h2>Software Engineer | Games Programmer</h2>
+            <a href="#" class="btn-rounded-white">Download CV</a>
         </div>
         <!-- End #lead-content -->
 
@@ -64,7 +65,7 @@
         <!-- End #lead-down -->
     </div>
     <!-- End #lead -->
-
+    
     <div id="about">
         <div class="container">
             <div class="row">
@@ -73,15 +74,156 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+                        Recent computer science graduate from Durham University, looking to enter a role where I
+                        can learn from experienced team members. Practical experience in various programming
+                        languages, game physics, and UI design. Strong teamwork and communication skills
+                        developed through collaborative projects. Passionate about learning and applying new
+                        technologies in the gaming industry.
                     </p>
                 </div>
             </div>
         </div>
     </div>
     <!-- End #about -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Featured Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/CyberDeciderPOV.png"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Adaptive Educational Game In VR</h3>
+                        <p>
+                            This project presents the design, implementation, and evaluation of a novel VR educational game framework
+                        that incorporates an adaptive questioning system based on a new interpretation of the Elo-rating system and user-initialized
+                        customization through an in-game shop.
+                        </p>
+                        <a href="#" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/DLModel.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Generative Deep Learning Model</h3>
+                        <p>
+                            Here I present image generation using a denoising diffusion probabilistic model which utilizes classifier-free diffusion guidance. The model is
+                            trained on the CIFAR-10 dataset at a resolution of 32x32, for a total of around 1 million iterations.
+                        </p>
+                        <a href="#" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/VREngine.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>VR Graphics Engine (almost) From Scratch</h3>
+                        <p>
+                            In this project I extend functionality of a rudimentary 3D graphics engine to include basic rendering, tracking, physics, and distortion pre-correction for VR.
+                            I limited my use of external libraries, which lead to me writing my own classes for vectors, matrices, and quaternions.
+                        </p>
+                        <a href="#" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+                    </div>
+                    
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>          
+            <!-- Projects Above -->
+
+            <a id="view-more-projects" href="#">View More Projects</a>
+            <div id="more-projects" class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/recommender.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Song Recommender System</h3>
+                        <p>
+                            Here I develop a system that recommends new, unheard music to users that they will react 
+                            to most positively based upon the music they have previously listened to. I utilize the Million Song
+                            Dataset (MSD) for this purpose, accessed via an AWS EC2 instance. A state-of-the-art model geared 
+                            towards sparse data is used to achieve accurate personalised recommendations.
+                        </p>
+                        <a href="#">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project --> 
+                
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/platformer.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>First-Person 3D Platformer</h3>
+                        <p>
+                            This project shows the design and development of a mario-64-esque platformer with a first-person shooter twist.
+                            The aim here was to demonstrate my ability to create all aspects of a complete video game, including menus, HUD, game physics and accessibility features.
+                        </p>
+                        <a href="#">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <a id="view-more-projects" href="https://github.com/armypele1" target="_blank">See My Github For All Projects <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+
+            
+
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>Go</li>
+            <li>Node.js</li>
+            <li>AngularJs</li>
+            <li>React</li>
+            <li>Elixir</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>Ruby on Rails</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>Go</li>
+            <li>Node.js</li>
+            <li>AngularJs</li>
+            <li>React</li>
+            <li>Elixir</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>Ruby on Rails</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
 
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
@@ -145,79 +287,6 @@
     </div>
     <!-- End #education -->
 
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-        </ul>
-    </div>
-    <!-- End #skills -->
-
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
@@ -237,7 +306,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; <span id="current-year">2022</span> YOUR NAME
+                        Copyright &copy; <span id="current-year">2022</span> LOGAN ARMSTRONG
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -274,6 +343,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script src="https://kit.fontawesome.com/8b583da97c.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

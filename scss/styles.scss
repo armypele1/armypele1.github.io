@@ -34,7 +34,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: rgb(25, 158, 65);
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -46,7 +46,7 @@ $border: #dcd9d9;
 
 // Define text colors
 $heading: #374054;
-$text: #74808a;
+$text: #748a7e;
 
 /*
     ---------------------
@@ -233,6 +233,14 @@ header {
     i {
         vertical-align: middle;
     }
+}
+
+#view-more-projects {
+    color: $text;
+        &:hover {
+            color: $base-color;
+        }
+        font-size: 1.25em;
 }
 
 footer {
@@ -672,6 +680,34 @@ footer {
         color: $text;
         margin: 0 0 15px 0;
         font-size: 0.9em;
+    }
+
+    a {
+        color: $text;
+        &:hover {
+            color: $base-color;
+        }
+    }
+}
+
+#project-skills {
+    ul {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 800px;
+        margin-top: 10%;
+    }
+
+    li {
+        display: inline-block;
+        margin: 5px;
+        padding: 5px 10px;
+        color: $heading;
+        background: darken($background-alt, 5%);
+        list-style: none;
+        cursor: default;
+        font-size: 1em;
     }
 }
 
