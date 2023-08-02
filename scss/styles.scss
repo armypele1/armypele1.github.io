@@ -481,6 +481,12 @@ footer {
     h2 {
         color: $heading;
     }
+
+    li {
+        color: $text;
+        font-size: 0.9em;
+        margin: 0;
+    }
 }
 
 #experience-timeline {
