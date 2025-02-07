@@ -11,7 +11,7 @@ import UserProfileCard from "./components/cards/user-profile-card";
 function App() {
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-      <div className="xl:container mx-auto p-5">
+      <div className="2xl:container mx-auto p-4">
         <div className="flex gap-4 flex-col lg:flex-row">
           <div id="section-1" className="w-full lg:w-[400px] flex flex-col gap-4">
             <ThemeCard />
@@ -27,7 +27,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="xl:container ml-auto flex gap-2 items-center justify-center lg:justify-end mt-5 text-muted-foreground">
+        <div className="ml-auto flex gap-2 items-center justify-center lg:justify-end mt-5 text-muted-foreground">
           <p className="text-muted-foreground">©2024 Logan Armstrong</p>
           <img src={"bobomb.gif"} className="h-8 w-8 no-aliasing mt-[1px]" />
         </div>

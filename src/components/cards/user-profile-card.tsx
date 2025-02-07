@@ -17,6 +17,7 @@ const UserProfileCard = () => {
 
   return (
     <GlowCard className="relative">
+      <div className="absolute top-0 left-0 w-full h-20 bg-secondary dark:bg-secondary/30" />
       <CardHeader className="flex flex-col items-center space-y-3">
         <Avatar className="h-32 w-32 border-2">
           <AvatarImage src={profilePic} alt={name} />

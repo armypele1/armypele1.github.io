@@ -98,7 +98,7 @@ const GlowCard = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
     return (
       <div
         ref={mergedRef}
-        className={cn("rounded-xl border bg-card text-card-foreground shadow border-radiant border-none", className)}
+        className={cn("rounded-xl border bg-card text-card-foreground shadow z-0 overflow-hidden", className)}
         {...props}
       />
     );
