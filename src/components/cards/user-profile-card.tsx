@@ -3,7 +3,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { FileText } from "lucide-react";
 import { GlowCard } from "../ui/glow-card/glow-card";
-import profilePic from "../../assets/profile-pic.jpeg";
+import profilePic from "../../assets/profile-pic1.jpg";
 
 const UserProfileCard = () => {
   const name = "Logan Armstrong";
@@ -20,7 +20,7 @@ const UserProfileCard = () => {
       <div className="absolute top-0 left-0 w-full h-20 bg-secondary dark:bg-secondary/30" />
       <CardHeader className="flex flex-col items-center space-y-3">
         <Avatar className="h-32 w-32 border-2">
-          <AvatarImage src={profilePic} alt={name} />
+          <AvatarImage src={profilePic} alt={name} className="-rotate-6 h-[105%]" />
           <AvatarFallback>{initials}</AvatarFallback>
         </Avatar>
         <div className="space-y-2 text-center">
