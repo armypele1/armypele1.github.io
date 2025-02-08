@@ -11,7 +11,10 @@ const ProjectCard = ({ imageUrl, url, tile }: Props) => {
   const { toast } = useToast();
 
   let classes =
-    "w-full h-[140px] bg-stone-200 dark:bg-stone-700 bg-cover bg-center cursor-pointer transition-transform hover:scale-[1.01] contrast-[.85] dark:contrast-100";
+    "w-full h-[140px] bg-stone-200 dark:bg-stone-700 bg-cover \
+    bg-center cursor-pointer transition-transform hover:scale-[1.01] \
+    brightness-110";
+
   if (tile) {
     classes += " bg-auto";
   }
