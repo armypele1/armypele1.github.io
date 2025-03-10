@@ -29,7 +29,7 @@ const UserProfileCard = () => {
         </div>
       </CardHeader>
       <CardFooter className="flex justify-center">
-        <a href="https://drive.google.com/file/d/1Nq6JGysSYfGOCJdhvwrlSJ6mmOOYgdwe/view?usp=sharing" target={"_blank"}>
+        <a href="https://drive.google.com/file/d/1t5-BwjYQoBVh767xgCDKqWVZIOlOrzEd/view?usp=sharing" target={"_blank"}>
           <Button>
             <FileText />
             Download CV
