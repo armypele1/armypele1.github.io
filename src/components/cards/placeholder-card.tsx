@@ -1,6 +1,5 @@
 import { PropsWithChildren } from "react";
-import { CardContent, CardHeader } from "../ui/card";
-import { GlowCard } from "../ui/glow-card/glow-card";
+import { Card, CardContent, CardHeader } from "../ui/card";
 
 interface Props {
   big?: boolean;
@@ -12,7 +11,7 @@ const PlaceholderCard = ({ big, title, children, content = true }: PropsWithChil
   const classes = "text-xl font-bold";
 
   return (
-    <GlowCard>
+    <Card>
       <CardHeader className={classes}>{title || "Placeholder"}</CardHeader>
       {!big && content ? (
         <CardContent>
@@ -25,7 +24,7 @@ const PlaceholderCard = ({ big, title, children, content = true }: PropsWithChil
       ) : (
         children
       )}
-    </GlowCard>
+    </Card>
   );
 };
 

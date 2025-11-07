@@ -1,15 +1,14 @@
 import SkillsGrid from "./skills-grid";
-import { CardHeader, CardContent } from "../ui/card";
-import { GlowCard } from "../ui/glow-card/glow-card";
+import { Card, CardHeader, CardContent } from "../ui/card";
 
 const SkillsCard = () => {
   return (
-    <GlowCard>
+    <Card>
       <CardHeader className={"text-xl font-bold"}>Skills</CardHeader>
       <CardContent className="overflow-x-auto">
         <SkillsGrid />
       </CardContent>
-    </GlowCard>
+    </Card>
   );
 };
 

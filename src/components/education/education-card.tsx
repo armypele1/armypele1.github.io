@@ -1,8 +1,7 @@
 import React from "react";
 import EducationInfo from "./education-info";
-import { CardHeader, CardContent } from "../ui/card";
+import { Card, CardHeader, CardContent } from "../ui/card";
 import { GraduationCap, University } from "lucide-react";
-import { GlowCard } from "../ui/glow-card/glow-card";
 
 const infoArr: Array<{
   title: string;
@@ -26,7 +25,7 @@ const infoArr: Array<{
 
 const EducationCard = () => {
   return (
-    <GlowCard className="w-full">
+    <Card className="w-full">
       <CardHeader className="text-xl font-bold">Education</CardHeader>
       <CardContent>
         {infoArr.map((info, i) => (
@@ -36,7 +35,7 @@ const EducationCard = () => {
           </div>
         ))}
       </CardContent>
-    </GlowCard>
+    </Card>
   );
 };
 

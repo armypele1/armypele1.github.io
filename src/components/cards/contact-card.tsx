@@ -1,5 +1,4 @@
-import { GlowCard } from "../ui/glow-card/glow-card";
-import { CardContent, CardHeader } from "../ui/card";
+import { Card, CardContent, CardHeader } from "../ui/card";
 import { Input } from "../ui/input";
 import { z } from "zod";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "../ui/form";
@@ -66,7 +65,7 @@ const ContactCard = () => {
   }
 
   return (
-    <GlowCard className="w-full">
+    <Card className="w-full">
       <CardHeader className="text-xl font-bold">Contact Me</CardHeader>
       <CardContent>
         <Form {...form}>
@@ -104,7 +103,7 @@ const ContactCard = () => {
           </form>
         </Form>
       </CardContent>
-    </GlowCard>
+    </Card>
   );
 };
 

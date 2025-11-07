@@ -1,15 +1,14 @@
 import { Button } from "../ui/button";
-import { CardHeader, CardContent, CardFooter } from "../ui/card";
+import { Card, CardHeader, CardContent, CardFooter } from "../ui/card";
 import ProjectCard from "./project-card";
 import alienTossThumbnail from "../../assets/alientoss.jpg";
 import ddpmThumbnail from "../../assets/ddpm.jpg";
 import vrEngineThumbnail from "../../assets/VREngine.jpg";
 import firemapperThumbnail from "../../assets/firemapper.jpg";
-import { GlowCard } from "../ui/glow-card/glow-card";
 
 const FeatProjectsCard = () => {
   return (
-    <GlowCard>
+    <Card>
       <CardHeader className={"text-xl font-bold"}>Featured Projects</CardHeader>
       <CardContent className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
         <ProjectCard url="https://alientoss.com" imageUrl={alienTossThumbnail} />
@@ -24,7 +23,7 @@ const FeatProjectsCard = () => {
           </Button>
         </a>
       </CardFooter>
-    </GlowCard>
+    </Card>
   );
 };
 

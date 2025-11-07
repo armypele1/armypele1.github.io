@@ -1,11 +1,10 @@
-import { CardDescription, CardHeader, CardTitle } from "../ui/card";
+import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
 import ModeToggle from "../buttons/mode-toggle";
-import { GlowCard } from "../ui/glow-card/glow-card";
 import { Button } from "../ui/button";
 
 const ThemeCard = () => {
   return (
-    <GlowCard className="w-[100%] flex flex-row justify-between">
+    <Card className="w-[100%] flex flex-row justify-between">
       <CardHeader>
         <CardTitle>Hey There 👋</CardTitle>
         <CardDescription>this is my portfolio</CardDescription>
@@ -32,7 +31,7 @@ const ThemeCard = () => {
           <ModeToggle />
         </div>
       </CardHeader>
-    </GlowCard>
+    </Card>
   );
 };
 

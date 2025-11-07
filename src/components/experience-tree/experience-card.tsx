@@ -1,6 +1,5 @@
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "../ui/accordion";
-import { CardContent, CardHeader } from "../ui/card";
-import { GlowCard } from "../ui/glow-card/glow-card";
+import { Card, CardContent, CardHeader } from "../ui/card";
 
 export interface Props {
   roleName: string;
@@ -10,11 +9,12 @@ export interface Props {
   responsibilities: {
     [key: string]: JSX.Element | string;
   };
+  className?: string;
 }
 
-const ExperienceCard = ({ roleName, companyName, startDate, endDate, responsibilities }: Props) => {
+const ExperienceCard = ({ roleName, companyName, startDate, endDate, responsibilities, className }: Props) => {
   return (
-    <GlowCard>
+    <Card className={className}>
       <CardHeader className="text-xl font-bold flex flex-row justify-between">
         <div>
           {roleName} <div className="text-sm text-primary">@{companyName}</div>
@@ -33,7 +33,7 @@ const ExperienceCard = ({ roleName, companyName, startDate, endDate, responsibil
           ))}
         </Accordion>
       </CardContent>
-    </GlowCard>
+    </Card>
   );
 };
 
