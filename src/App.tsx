@@ -7,6 +7,7 @@ import ThemeCard from "./components/cards/theme-card";
 import FeatProjectsCard from "./components/projects/feat-projects-card";
 import SkillsCard from "./components/skills-grid/skills-card";
 import UserProfileCard from "./components/cards/user-profile-card";
+import AnimatedCardWrapper from "./components/animated-card-wrapper";
 
 function App() {
   return (
@@ -17,17 +18,29 @@ function App() {
             id="section-1"
             className="w-full lg:w-[400px] flex flex-col gap-4"
           >
-            <ThemeCard />
-            <UserProfileCard />
-            <ExperienceTree />
+            <AnimatedCardWrapper delay={0}>
+              <ThemeCard />
+            </AnimatedCardWrapper>
+            <AnimatedCardWrapper delay={160}>
+              <UserProfileCard />
+            </AnimatedCardWrapper>
+            <AnimatedCardWrapper delay={320}>
+              <ExperienceTree />
+            </AnimatedCardWrapper>
           </div>
           <div id="section-2" className="flex flex-1 flex-col gap-4 min-w-0">
-            <FeatProjectsCard />
-            <SkillsCard />
-            <div className="flex gap-4 flex-col lg:flex-row">
-              <EducationCard />
-              <ContactCard />
-            </div>
+            <AnimatedCardWrapper delay={80}>
+              <FeatProjectsCard />
+            </AnimatedCardWrapper>
+            <AnimatedCardWrapper delay={240}>
+              <SkillsCard />
+            </AnimatedCardWrapper>
+            <AnimatedCardWrapper delay={400}>
+              <div className="flex gap-4 flex-col lg:flex-row">
+                <EducationCard />
+                <ContactCard />
+              </div>
+            </AnimatedCardWrapper>
           </div>
         </div>
         <div className="ml-auto flex gap-2 items-center justify-center lg:justify-end mt-5 text-muted-foreground">
