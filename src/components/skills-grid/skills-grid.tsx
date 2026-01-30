@@ -2,34 +2,27 @@ import { TooltipProvider } from "../ui/tooltip";
 import SkillIcon from "./skill-icon";
 import SkillsGroup from "./skills-group";
 
-const languages = ["typescript", "javascript", "python", "csharp", "c", "bash"]; // add go soon
-const frontend = ["html5", "css3", "react", "capacitor", "redux", "materialui", "tailwindcss"];
-const technologies = [
-  "git",
-  "github",
-  "githubactions",
-  "terraform",
-  "googlecloud",
-  "firebase",
-  "docker",
-  "pytorch",
-  "android",
-  "apple",
-  "unity",
-  "blender",
-  "gimp",
-];
+const languages = ["typescript", "javascript", "csharp", "python", "bash"];
+const frontend = ["html5", "css3", "react", "tailwindcss", "capacitor"];
 const backend = [
   "nodejs",
-  "dotnetcore",
-  "denojs",
-  "express",
   "nestjs",
-  "swagger",
+  "prisma",
   "postgresql",
   "sqlite",
   "redis",
   "mongodb",
+  "unity",
+];
+const devops = [
+  "git",
+  "github",
+  "githubactions",
+  "terraform",
+  "docker",
+  "googlecloud",
+  "cloudrun",
+  "firebase",
 ];
 
 const baseDelay = 0;
@@ -37,10 +30,10 @@ const delayIncrease = 50;
 
 const SkillsGrid = () => {
   const categories = [
-    { title: "Technologies", items: technologies },
     { title: "Backend", items: backend },
-    { title: "Languages", items: languages },
+    { title: "DevOps", items: devops },
     { title: "Frontend", items: frontend },
+    { title: "Languages", items: languages },
   ];
 
   return (
@@ -49,7 +42,11 @@ const SkillsGrid = () => {
         {categories.map(({ title, items }) => (
           <SkillsGroup key={title} title={title}>
             {items.map((item, idx) => (
-              <SkillIcon key={item} name={item} delay={baseDelay + idx * delayIncrease} />
+              <SkillIcon
+                key={item}
+                name={item}
+                delay={baseDelay + idx * delayIncrease}
+              />
             ))}
           </SkillsGroup>
         ))}

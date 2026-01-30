@@ -6,12 +6,17 @@ const ThemeCard = () => {
   return (
     <Card className="w-[100%] flex flex-row justify-between">
       <CardHeader>
-        <CardTitle>Hey There 👋</CardTitle>
+        <CardTitle>Welcome 👋</CardTitle>
         <CardDescription>this is my portfolio</CardDescription>
       </CardHeader>
       <CardHeader>
         <div className="flex gap-2 flex-wrap">
-          <a href="https://github.com/armypele1" target="_blank" rel="noopener noreferrer" className="flex gap-2">
+          <a
+            href="https://github.com/armypele1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex gap-2"
+          >
             <Button variant="outline" size="icon">
               <i className="devicon-github-original scale-125"></i>
               <span className="sr-only">Github</span>

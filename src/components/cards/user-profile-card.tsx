@@ -1,8 +1,14 @@
-import { Card, CardHeader, CardFooter, CardTitle, CardDescription } from "@/components/ui/card";
+import {
+  Card,
+  CardHeader,
+  CardFooter,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { FileText } from "lucide-react";
-import profilePic from "../../assets/profile-pic1.jpg";
+import profilePic from "../../assets/profile.jpg";
 
 const UserProfileCard = () => {
   const name = "Logan Armstrong";
@@ -15,11 +21,11 @@ const UserProfileCard = () => {
     .toUpperCase();
 
   return (
-    <Card className="relative">
-      <div className="absolute top-0 left-0 w-full h-20 bg-secondary dark:bg-secondary/30" />
+    <Card className="relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-r from-secondary from-60% to-transparent" />
       <CardHeader className="flex flex-col items-center space-y-3">
         <Avatar className="h-32 w-32 border-2">
-          <AvatarImage src={profilePic} alt={name} className="-rotate-6 h-[105%]" />
+          <AvatarImage src={profilePic} alt={name} />
           <AvatarFallback>{initials}</AvatarFallback>
         </Avatar>
         <div className="space-y-2 text-center">
@@ -28,7 +34,10 @@ const UserProfileCard = () => {
         </div>
       </CardHeader>
       <CardFooter className="flex justify-center">
-        <a href="https://drive.google.com/file/d/1t5-BwjYQoBVh767xgCDKqWVZIOlOrzEd/view?usp=sharing" target={"_blank"}>
+        <a
+          href="https://drive.google.com/file/d/1t5-BwjYQoBVh767xgCDKqWVZIOlOrzEd/view?usp=sharing"
+          target={"_blank"}
+        >
           <Button>
             <FileText />
             Download CV
