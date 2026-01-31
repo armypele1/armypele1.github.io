@@ -35,7 +35,7 @@ const UserProfileCard = () => {
       </CardHeader>
       <CardFooter className="flex justify-center">
         <a
-          href="https://drive.google.com/file/d/1t5-BwjYQoBVh767xgCDKqWVZIOlOrzEd/view?usp=sharing"
+          href="https://drive.google.com/file/d/14pOmDXhu4zeWwpjoYPiDXosr0GDdZNQOFHftUnx54ew/preview"
           target={"_blank"}
         >
           <Button>
