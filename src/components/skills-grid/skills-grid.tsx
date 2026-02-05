@@ -7,14 +7,14 @@ const frontend = ["html5", "css3", "react", "tailwindcss", "capacitor"];
 const backend = [
   "nodejs",
   "nestjs",
+  "express",
   "prisma",
   "postgresql",
   "sqlite",
   "redis",
   "mongodb",
-  "unity",
 ];
-const devops = [
+const toolsAndInfra = [
   "git",
   "github",
   "githubactions",
@@ -23,6 +23,7 @@ const devops = [
   "googlecloud",
   "cloudrun",
   "firebase",
+  "unity",
 ];
 
 const baseDelay = 0;
@@ -31,7 +32,7 @@ const delayIncrease = 50;
 const SkillsGrid = () => {
   const categories = [
     { title: "Backend", items: backend },
-    { title: "DevOps", items: devops },
+    { title: "Tools & Infra", items: toolsAndInfra },
     { title: "Frontend", items: frontend },
     { title: "Languages", items: languages },
   ];
