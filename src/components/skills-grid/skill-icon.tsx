@@ -39,7 +39,7 @@ const SkillIcon = ({ name }: Props) => {
         className={`text-5xl transition-colors devicon-${name}-original devicon-${name}-plain  ${
           isExpanding
             ? "animate-clean-bounce text-primary dark:text-primary"
-            : "dark:text-stone-200"
+            : "dark:text-stone-200 text-stone-600"
         } `}
       ></i>
       <p className={"text-center text-sm font-medium leading-none mt-2"}>

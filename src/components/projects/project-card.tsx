@@ -40,10 +40,12 @@ const ProjectCard = ({ header, description, imageUrl, tile, url }: Props) => {
         <Card
           onClick={() => setIsOpen(true)}
           className={cn(
-            "w-full h-[140px] bg-stone-200 dark:bg-stone-700 bg-cover bg-center cursor-pointer rounded-xl",
+            "w-full h-[140px] bg-white bg-cover bg-center cursor-pointer rounded-xl bg-blend-multiply contrast-75 dark:contrast-100",
             tile && "bg-auto",
           )}
-          style={{ backgroundImage: `url(${imageUrl})` }}
+          style={{
+            backgroundImage: `url(${imageUrl})`,
+          }}
         />
       </motion.div>
 
